@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Research Writing Pipeline"
+  short_description: "Evidence-gated academic writing workflow"
+  default_prompt: "Use $ai-research-writing-pipeline to turn my research project into an evidence-traceable manuscript workflow."
