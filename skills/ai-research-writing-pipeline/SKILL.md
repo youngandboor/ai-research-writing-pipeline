@@ -1,6 +1,6 @@
 ---
 name: ai-research-writing-pipeline
-description: End-to-end evidence-gated academic writing workflow for turning a research project, experiment folder, paper draft, review history, or messy AI-agent workspace into a traceable manuscript pipeline. Use when the user asks to write, rewrite, organize, audit, red-team, polish, submit, or manage a scholarly paper across idea, literature, experiment evidence, claims, figures, draft integration, review response, and final readiness; especially when multiple agents, prior chat memory, numeric claims, citations, figures, or project files must be kept synchronized without fabricating evidence.
+description: End-to-end evidence-gated academic writing workflow for turning a research project, experiment folder, paper draft, review history, or messy AI-agent workspace into a traceable manuscript pipeline. Use when the user asks to write, rewrite, organize, audit, red-team, polish, submit, or manage a scholarly paper across idea generation, literature search, paper reading, baseline selection, experiment evidence, claim registration, manuscript writing, language polishing, figures, data availability, pre-submission review, rebuttal planning, presentation/patent side outputs, and final readiness; especially when multiple agents, prior chat memory, numeric claims, citations, figures, or project files must be synchronized without fabricating evidence.
 ---
 
 # AI Research Writing Pipeline
@@ -10,6 +10,8 @@ description: End-to-end evidence-gated academic writing workflow for turning a r
 Treat writing as a controlled integration problem, not a prose-generation problem. A manuscript claim may enter the draft only after its evidence source, authority, boundary, and currentness are known.
 
 Use this skill to build or operate a full academic-writing workflow. Do not make the target venue, project name, method, or field part of the skill logic; load them from the active project.
+
+This skill owns the workflow directly. Do not require adjacent writing, review, figure, citation, or research-planning skills to be installed before acting. If a project offers local skills or tools, use them as optional helpers, but keep the authority model, artifact contracts, and claim calibration in this skill.
 
 ## Workflow
 
@@ -54,6 +56,8 @@ Create the smallest useful version of these files if the project lacks them:
 
 For concrete schemas and examples, read `references/artifact-contracts.md`.
 
+For native playbooks covering idea evaluation, literature verification, paper reading, story design, technical-paper skeletons, evidence audits, baseline selection, figures, review, rebuttal, data/release statements, presentations, and patent side outputs, read `references/capability-playbooks.md`.
+
 ## Project Organization
 
 Before moving files, classify paths as one of:
@@ -93,6 +97,23 @@ This skill adopts the reusable parts of Any Science Framework and the observed m
 - Keep administrative submission facts outside scientific scoring and mark them unknown until confirmed.
 
 For a compact comparison of these patterns, read `references/framework-patterns.md`.
+
+## Capability Routing
+
+Use this built-in route map before drafting:
+
+- **Idea or scope:** evaluate novelty, feasibility, lifecycle fit, fatal flaws, and whether the contribution is a technique, setting, benchmark, resource, or application paper.
+- **Literature or citation:** verify metadata, venue, DOI or stable URL, publication status, and exactly which claim the source can and cannot support.
+- **Paper reading:** extract source-grounded claims, figures, tables, assumptions, methods, limitations, and citation candidates from PDFs or publisher pages.
+- **Baseline selection:** identify classic, strong-simple, direct competitor, SOTA, resource-matched, and reviewer-expected baselines; exclude non-runnable or incomparable baselines explicitly.
+- **Evidence audit:** inspect code, configuration, raw results, metrics, statistical uncertainty, and source-data provenance before allowing numeric claims into prose.
+- **Writing:** build a logic skeleton, contribution chain, abstract, introduction, method, evaluation, discussion, limitations, and conclusion from registered evidence.
+- **Polishing:** improve clarity and academic rhythm without changing facts, claim strength, citations, numbers, equations, or experimental conditions.
+- **Figures:** define the research question, profile source data, reject misleading chart types, render at final size, export vector-first, and record visual QA.
+- **Review:** run fresh source-pinned critique with severity, weakness type, likely reviewer perspective, fix cost, and expected score impact.
+- **Rebuttal:** classify external comments, identify evidence that can change the decision, and draft point-by-point responses without promising unrun work.
+- **Data/release:** write availability, repository, accession, license, and restricted-data statements only from confirmed facts.
+- **Presentation or patent:** generate auxiliary outputs from stable paper evidence; never let side outputs become manuscript evidence.
 
 ## Output Discipline
 

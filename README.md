@@ -1,5 +1,7 @@
 # AI Research Writing Pipeline
 
+[中文说明](README.zh-CN.md)
+
 Evidence-gated Codex skill for full-cycle academic manuscript writing.
 
 This repository packages a reusable Codex skill that turns a research project,
@@ -11,6 +13,9 @@ constraints.
 ## What It Does
 
 - Maps a research workspace before editing prose.
+- Integrates idea evaluation, literature verification, paper reading, baseline
+  selection, evidence audit, writing, polishing, figures, review, rebuttal,
+  data/release statements, and side-output workflows.
 - Separates literature, experiment evidence, writing, figures, review, mentor
   advice, integration, administration, and release work.
 - Requires claims, numbers, references, figures, and unknowns to be registered
@@ -33,6 +38,7 @@ ai-research-writing-pipeline/
         |   `-- openai.yaml
         |-- references/
         |   |-- artifact-contracts.md
+        |   |-- capability-playbooks.md
         |   `-- framework-patterns.md
         `-- scripts/
             `-- workspace_inventory.py
@@ -92,6 +98,11 @@ The main discipline is:
 - `artifact-contracts.md` gives lightweight JSON/JSONL contracts for task
   packets, claim registries, numeric claims, reference ledgers, figure
   manifests, and completion manifests.
+- `capability-playbooks.md` integrates the common capabilities of idea
+  evaluators, literature tools, paper readers, baseline selectors, writing and
+  polishing workflows, figure agents, reviewers, rebuttal planners, data
+  statement helpers, presentation builders, and release gates into this single
+  skill.
 
 ## License
 
